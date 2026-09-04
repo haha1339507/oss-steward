@@ -1,0 +1,20 @@
+name: Maintainer health
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          command: health
+      - uses: ./
+        with:
+          command: digest
+          token: ${{ secrets.GITHUB_TOKEN }}
