@@ -1,0 +1,18 @@
+name: Feature request
+description: Propose a read-only maintainer check or MCP tool
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What maintainer work is painful today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Keep the default read-only unless you can justify a write path.
+    validations:
+      required: true

@@ -1,0 +1,56 @@
+{
+  "name": "oss-steward",
+  "version": "0.1.0",
+  "description": "Read-only CLI and MCP server for OSS maintainer health checks, issue digests, and release notes.",
+  "type": "module",
+  "bin": {
+    "oss-steward": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "health": "tsx src/cli.ts health",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "mcp",
+    "github",
+    "opensource",
+    "maintainer-tools",
+    "changelog",
+    "release-notes"
+  ],
+  "author": "oss-steward maintainers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haha1339507/oss-steward.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haha1339507/oss-steward/issues"
+  },
+  "homepage": "https://github.com/haha1339507/oss-steward#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
