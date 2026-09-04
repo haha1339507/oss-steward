@@ -94,6 +94,8 @@ Cursor / Claude Code / Codex example:
 
 Logs go to stderr. stdout is reserved for MCP JSON-RPC.
 
+Workflow YAML also lives in [`docs/github-workflows/`](docs/github-workflows/) so the definitions stay public. Enabling Actions under `.github/workflows/` requires a GitHub token with the `workflow` scope (`gh auth refresh -s workflow`).
+
 ## GitHub Action
 
 This repository ships a composite action that dogfoods the CLI:

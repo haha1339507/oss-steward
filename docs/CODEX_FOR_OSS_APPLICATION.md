@@ -35,7 +35,7 @@ Primary maintainer
 **Why does this repository qualify? (max 500 characters)**
 
 ```text
-oss-steward is an open-source CLI + MCP server for solo/small-team maintainers. It runs local health checks (license, CI, templates, recent commits), a read-only GitHub digest of stale/unlabeled issues and open PRs, and conventional-commit release notes. Humans and coding agents share the same read-only tools; health/notes need no API key. I am the author and primary maintainer (releases, CI, issues). Stars: 0. npm downloads: 0. It targets rising maintainer load from agent-authored contributions.
+oss-steward is an open-source CLI + MCP server for solo/small-team maintainers. It runs local health checks (license, CI, templates, recent commits), a read-only GitHub digest of stale/unlabeled issues and open PRs, and conventional-commit release notes. Humans and coding agents share the same read-only tools; health/notes need no API key. I am the author and primary maintainer (releases and issues). Stars: 0. npm downloads: 0. It targets rising maintainer load from agent-authored contributions.
 ```
 
 Character count: keep this block under 500 characters. If you add later metrics, replace the two zeros instead of adding adjectives.
@@ -54,7 +54,7 @@ Use credits in CI on fixture repos: generate health explanations for large trees
 **Anything else we should know? (max 500 characters)**
 
 ```text
-Default mode is read-only: the CLI never comments, labels, or merges. I dogfood oss-steward on this repository (GitHub Action + `oss-steward health` in CI). If accepted, I will keep weekly maintenance (issues, Dependabot, releases) and publish npm so download counts become a real usage signal. This is not a request for a personal ChatGPT subscription; it is support for maintaining a public maintainer-tools + MCP project.
+Default mode is read-only: the CLI never comments, labels, or merges. I am the author and primary maintainer (v0.1.0, issue triage). The repo ships a composite GitHub Action; CI workflow files are ready (issue #1). If accepted, I will keep weekly maintenance and publish npm so downloads become a real usage signal. This is support for a public maintainer-tools + MCP project, not a personal subscription request.
 ```
 
 ## Do not write
