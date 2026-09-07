@@ -45,7 +45,7 @@
   "homepage": "https://github.com/haha1339507/oss-steward#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",
-    "zod": "^3.25.76"
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
